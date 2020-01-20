@@ -1,0 +1,9 @@
+﻿分類,データ型
+基本型,数値(number)
+,文字列(string)
+,真偽(boolean)
+,"特殊型(null,undifiend)"
+参照型,"配列(array,set,map)"
+,オブジェクト(object)
+,関数(function)
+,etc
