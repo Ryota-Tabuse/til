@@ -13,3 +13,10 @@
     }
     ?>
 ```
+2. [https://atcoder.jp/contests/abc081/tasks/abc081_a](https://atcoder.jp/contests/abc081/tasks/abc081_a)
+```
+    <?php
+    	$word = fgets(STDIN);
+    	echo substr_count($word, '1');
+    ?>
+```
