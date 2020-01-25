@@ -1,3 +1,3 @@
 # Discription
 
-JavaScript の勉強資料共有ファルダ
+JavaScript の勉強資料ファルダ
