@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+</head>
+<body>
+    <!-- 算出プロパティについて -->
+    <!-- 算出プロパティはデータの取得のみに使用すること。
+    また、常に最新の値が欲しい場合はメソッドを使用すること。 -->
+    <div id="app">
+        <p>{{email.split('@')[0].toLowerCase()}}</p>
+        <p>{{localEmail}}</p>
+
+        <form>
+            <input type="button" value="クリック"　v-on:click="onclick">
+        </form>
+        <div>算出プロパティ：{{randomc}}</div>
+        <div>メソッド：{{randomm()}}</div>
+        <div>現在日時：{{current}}</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>window.Vue || document.write('<script src="../../../lib/vue.js" type="text/javascript"><\/script>')</script>
+    <script src="../js/2-2-2.js"></script>
+</body>
+</html>
