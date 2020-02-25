@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+</head>
+<body>
+    <!-- イベントの基本 -->
+    <div id="app">
+        <button @click="onclick">クリック</button>
+        <p>{{message}}</p>
+
+        <img v-bind:src="path" alt="ロゴ画像" v-on:mouseenter="onmouseenter" v-on:mouseleave="onmouseleave">
+        <div id="outer" v-on:mouseenter="onmousein" v-on:mouseleave="onmouseout">
+            外(outer)
+            <p id="inner">
+                内(inner)
+            </p>
+        </div>
+        <div v-html="result"></div>
+    </div>
+    <div id="app2">
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>window.Vue || document.write('<script src="../../../lib/vue.js" type="text/javascript"><\/script>')</script>
+    <script src="../js/3-1-1.js"></script>
+</body>
+</html>
