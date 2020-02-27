@@ -26,9 +26,11 @@ let app = new Vue({
 let app2 = new Vue({
     el: '#app2',
     data: {
-        result:'',
+        path:'http://www.web-deli.com/image/wings.jpg',
     },
     methods: {
-        
+        oneeror: function() {
+            this.path = 'http://www.web-deli.com/image/noimage.jpg';
+        }
     }
 });
