@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+</head>
+<body>
+    <!-- バインドの動作オプション -->
+    <div id="app">
+       <form>
+            <label for="temperature">サウナの温度：</label>
+            <input type="text" id="temperature" v-model.number="temperature" v-on:change="onchange" />
+            <input type="text" id="aaa" v-model.number.lazy="aaa"/>
+            <p>まるめご{{temp}}</p>
+            <p>aaa{{aaa}}</p>
+       </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>window.Vue || document.write('<script src="../../../lib/vue.js" type="text/javascript"><\/script>')</script>
+    <script src="../js/3-2-7.js"></script>
+</body>
+</html>
