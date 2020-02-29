@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css" type="text/css"></style>
+</head>
+<body>
+    <div id="app">
+        <label for="name">氏名</label>
+        <input type="text" id="name" v-model="name">
+        <div v-cloak>初めまして、{{ name }}さん。</div>
+        <div v-cloak>はじめまして、{{name}}さん。</div>
+        <p v-cloak>{{message}}</p>
+
+        <div v-bind:style="{ backgroundColor: 'Aqua', fontSize: '1.5rem'}">
+            みなさん！色が変わっていますか？
+        </div>
+
+        <div v-bind:style="[color, size]">
+            みなさん！色が変わっていますか？
+        </div>
+
+        <a v-cloak v-bind:style="{tapHighlightColor:'Aqua'}" v-bind:href="url">
+            {{url}}
+        </a>
+
+        <div v-cloak class="small" v-bind:class="{color2, frame: isChange}">
+            aaa
+        </div>
+
+        <p v-cloak>{{ name }}</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>window.Vue || document.write('<script src="../../../lib/vue.js" type="text/javascript"><\/script>')</script>
+    <script src="../js/3-4-3.js"></script>
+    
+</body>
+</html>
