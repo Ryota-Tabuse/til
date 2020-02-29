@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue.js</title>
+</head>
+<body>
+    <!-- 双方向バインディング -->
+    <div id="app">
+       <form>
+           <h1>ラジオボタン</h1>
+            <label for="dog">犬</label>
+            <input type="radio" id="dog" value="いぬ" v-model="pet" />
+            <br />
+            <label for="dog">ねこ</label>
+            <input type="radio" id="cat" value="ねこ" v-model="pet" />
+            <br />
+            <label for="dog">そのた</label>
+            <input type="radio" id="other" value="その他" v-model="pet" />
+            <br />
+            <p>ペット：{{ pet }}</p>
+
+           <h1>チェックボックス</h1>
+           <label for="agree">同意する：</label>
+           <input type="checkbox" id="agree" v-model="agree" />
+           <div>回答：{{agree}}</div>
+
+
+           <h1>チェックボックス複数</h1>
+            <div>お使いのOSは？</div>
+            <label for="windows">Windows</label>
+            <input type="checkbox" id="windows" value="Windows" v-model="os">
+            <label for="linux">Linux</label>
+            <input type="checkbox" id="linux" value="Linux" v-model="os">
+            <label for="macOS">macOS</label>
+            <input type="checkbox" id="mac" value="macOS" v-model="os">
+            <p>回答：{{os}}</p>
+       </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script>window.Vue || document.write('<script src="../../../lib/vue.js" type="text/javascript"><\/script>')</script>
+    <script src="../js/3-2-2.js"></script>
+</body>
+</html>
