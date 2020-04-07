@@ -1,0 +1,12 @@
+{
+  "name": "@ryota_tabuse/test_20200405",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RyotaTabuse",
+  "license": "MIT",
+  "private": false
+}
