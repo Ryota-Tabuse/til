@@ -14,4 +14,7 @@ function myFunction() {
     Logger.log(sheets[0].getName());
     Logger.log(sheets[1].getName());
     Logger.log(sheets[2].getName());
+
+
+    const foo = [{ "aaa": "aaa" }, { "aaa": "aaa" }];
 }

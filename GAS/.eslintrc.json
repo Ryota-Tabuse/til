@@ -1,0 +1,35 @@
+{
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "printWidth": 140,
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSpacing": true,
+        "arrowParens": "always"
+      }
+    ]
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2015,
+        "project": "./tsconfig.json"
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint"
+      ],
+      "plugins": [
+        "@typescript-eslint",
+        "prettier"
+      ],
+      "env": { "node": true, "es6": true },
+      "parser": "@typescript-eslint/parser",
+}
